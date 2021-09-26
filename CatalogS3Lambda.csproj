@@ -1,0 +1,136 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1C3F1E3C-7D44-4821-ACBB-E3FDE7D4B2E6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CatalogS3Lambda</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Catalog\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Catalog\v16\.suo" />
+    <None Include="Catalog\1.Json" />
+    <None Include="Catalog\appsettings.Development.json" />
+    <None Include="Catalog\appsettings.json" />
+    <None Include="Catalog\aws-lambda-tools-defaults.json" />
+    <None Include="Catalog\bin\Debug\net5.0\1.Json" />
+    <None Include="Catalog\bin\Debug\net5.0\appsettings.Development.json" />
+    <None Include="Catalog\bin\Debug\net5.0\appsettings.json" />
+    <None Include="Catalog\bin\Debug\net5.0\Catalog.deps.json" />
+    <None Include="Catalog\bin\Debug\net5.0\Catalog.runtimeconfig.dev.json" />
+    <None Include="Catalog\bin\Debug\net5.0\Catalog.runtimeconfig.json" />
+    <None Include="Catalog\bin\Debug\net5.0\New.json" />
+    <None Include="Catalog\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so" />
+    <None Include="Catalog\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib" />
+    <None Include="Catalog\Catalog.csproj" />
+    <None Include="Catalog\New.json" />
+    <None Include="Catalog\obj\Catalog.csproj.nuget.dgspec.json" />
+    <None Include="Catalog\obj\Catalog.csproj.nuget.g.props" />
+    <None Include="Catalog\obj\Catalog.csproj.nuget.g.targets" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.AssemblyInfoInputs.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.assets.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.csproj.CopyComplete" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.csproj.CoreCompileInputs.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.csprojAssemblyReference.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.genruntimeconfig.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\Catalog.RazorTargetAssemblyInfo.cache" />
+    <None Include="Catalog\obj\Debug\net5.0\staticwebassets\Catalog.StaticWebAssets.Manifest.cache" />
+    <None Include="Catalog\obj\project.assets.json" />
+    <None Include="Catalog\obj\project.nuget.cache" />
+    <None Include="Catalog\Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Catalog\bin\Debug\net5.0\AWSSDK.Core.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\AWSSDK.Extensions.NETCore.Setup.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\AWSSDK.S3.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Catalog.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Catalog.exe" />
+    <Content Include="Catalog\bin\Debug\net5.0\Catalog.pdb" />
+    <Content Include="Catalog\bin\Debug\net5.0\DnsClient.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Microsoft.OpenApi.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\MongoDB.Bson.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\MongoDB.Driver.Core.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\MongoDB.Driver.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\ref\Catalog.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\runtimes\win\native\libzstd.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\runtimes\win\native\snappy32.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\runtimes\win\native\snappy64.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\SharpCompress.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <Content Include="Catalog\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <Content Include="Catalog\Catalog.csproj.user" />
+    <Content Include="Catalog\obj\Debug\net5.0\apphost.exe" />
+    <Content Include="Catalog\obj\Debug\net5.0\Catalog.csproj.FileListAbsolute.txt" />
+    <Content Include="Catalog\obj\Debug\net5.0\Catalog.dll" />
+    <Content Include="Catalog\obj\Debug\net5.0\Catalog.pdb" />
+    <Content Include="Catalog\obj\Debug\net5.0\ref\Catalog.dll" />
+    <Content Include="Catalog\obj\Debug\net5.0\staticwebassets\Catalog.StaticWebAssets.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog\Controllers\ItemsController.cs" />
+    <Compile Include="Catalog\Controllers\S3BucketController.cs" />
+    <Compile Include="Catalog\Dtos.cs" />
+    <Compile Include="Catalog\Entities\Items.cs" />
+    <Compile Include="Catalog\Extensions.cs" />
+    <Compile Include="Catalog\Helpers\AWSS3BucketHelper.cs" />
+    <Compile Include="Catalog\LambdaEntryPoint.cs" />
+    <Compile Include="Catalog\LocalEntryPoint.cs" />
+    <Compile Include="Catalog\Models\Catalog.cs" />
+    <Compile Include="Catalog\Models\ServiceConfiguration.cs" />
+    <Compile Include="Catalog\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Catalog\obj\Debug\net5.0\Catalog.AssemblyInfo.cs" />
+    <Compile Include="Catalog\obj\Debug\net5.0\Catalog.MvcApplicationPartsAssemblyInfo.cs" />
+    <Compile Include="Catalog\Program.cs" />
+    <Compile Include="Catalog\Repositories\FileRepository.cs" />
+    <Compile Include="Catalog\Repositories\ItemRepository.cs" />
+    <Compile Include="Catalog\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\CatalogS3Lambda\v16\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
